@@ -186,6 +186,7 @@ li:nth-child(1) a::before{
   margin-top: 10px;
   animation: sm 1.2s infinite alternate;
 }
+
 .sphere:hover .images{
   
   height: 100px;
