@@ -8,5 +8,6 @@ $(document).ready(function () {
   $(window).scroll(function(){
     var sc  = $(this).scrollTop()*0.1;
     console.log(sc.toFixed(0));
-  })
+  });
+  var x = 0;
 });
