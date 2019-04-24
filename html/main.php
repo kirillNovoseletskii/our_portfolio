@@ -14,3 +14,4 @@
   else {
     require_once 'mainen.php';
   }
+?>

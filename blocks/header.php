@@ -7,7 +7,7 @@
       <ul class="nav-menu-mob">
           <li><a href="#" class = 'mob_link'>MAIN</a></li>
           <li><a href="#" class = 'mob_link'>PROJECTS</a></li>
-          <li><a href="#" class = 'mob_link'>FEEDBACK</a></li>
+          <li><a href="/html/feedback.php" class = 'mob_link'>FEEDBACK</a></li>
           <li><a href="#" class = 'mob_link'>CONTACTS</a></li>
         </ul>
   </div>
@@ -23,7 +23,7 @@
   <ul class="nav">
     <li><a href="#" class = 'header_link'>MAIN</a></li>
     <li><a href="#" class = 'header_link'>PROJECTS</a></li>
-    <li><a href="#" class = 'header_link'>FEEDBACK</a></li>
+    <li><a href="/html/feedback.php" class = 'header_link'>FEEDBACK</a></li>
     <li><a href="#" class = 'header_link'>CONTACTS</a></li>
   </ul>
 </header>
