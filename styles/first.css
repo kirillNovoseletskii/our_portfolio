@@ -174,7 +174,7 @@ li:nth-child(1) a::before{
   height: 400px;
   border-radius: 50%;
   background: #000;
-  animation: move 1.2s infinite alternate;
+  animation: move 2s infinite alternate;
   flex-direction: column;
 }
 .shadow{
@@ -184,7 +184,7 @@ li:nth-child(1) a::before{
   filter: blur(5px);
   border-radius: 50%;
   margin-top: 10px;
-  animation: sm 1.2s infinite alternate;
+  animation: sm 2s infinite alternate;
 }
 @keyframes move {
   0%{
