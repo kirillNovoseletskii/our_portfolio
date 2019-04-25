@@ -21,13 +21,13 @@
     exit();
   }
 
-  /*$mes = "E-mail: ".$email."\r\nСообщение: ".$message;
+  $mes = "E-mail: ".$email."\r\nСообщение: ".$message;
 
   $subject = "=?utf-8?B?".base64_encode("Тестовое сообщение")."?=";
 
   $headers = "From: $email\r\nReply-to: $email\r\nContent-type:text/html;charset=utf-8\r\n";
 
-  mail('admin@K&T.com', $subject, $mes, $headers);*/
+  mail('itsrerades@gmail.com', $subject, $mes, $headers);
 
   header("Location: /html/feedback.php?fail=none");
 ?>
