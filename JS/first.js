@@ -11,4 +11,16 @@ $(document).ready(function () {
     $('.background').css('transform','translateY('+sc*0.5+'px)')
     $('.title').css('margin-bottom',sc*-0.1+30+'px')
   });
+  $(".load").show('slow');
+setTimeout(function() { 
+  $(".load").css({
+    'opacity':0,
+    'transform':'scale(2)',
+  }); 
+}, 2200);
+setTimeout(function() { 
+  $(".load").css({
+    'display':'none'
+  }); 
+},3000);
 });
