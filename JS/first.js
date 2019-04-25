@@ -6,8 +6,9 @@ $(document).ready(function () {
     $('.mob-menu').addClass('close_menu')
   })
   $(window).scroll(function(){
-    var sc  = $(this).scrollTop()*0.1;
+    var sc  = $(this).scrollTop();
     console.log(sc.toFixed(0));
+    $('.background').css('transform','translateY('+sc*0.5+'px)')
+    $('.title').css('margin-bottom',sc*-0.1+30+'px')
   });
-  var x = 0;
 });
