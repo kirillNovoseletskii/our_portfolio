@@ -67,6 +67,7 @@ body{
   color: var(--color);
   animation: be 2s ease;
   transition: .2s;
+  animation-delay: 3s;
 }
 @keyframes be {
   0%{
@@ -137,7 +138,7 @@ li:nth-child(1) a::before{
   height: 3px;
   background: rgb(0, 0, 0);
   position: absolute;
-  top: 10%;
+  top: 70px;
   transform: scaleX(0);
   transition: .3s;
   margin-top: 10px;
