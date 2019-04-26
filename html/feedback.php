@@ -2,7 +2,7 @@
 <head>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <?php
-  $title = "Document";
+  $title = "PoRTFOLIO";
   require_once "../blocks/head.php";
 
   $fail = $_GET['fail'];
@@ -11,7 +11,7 @@
 
 <body>
 
-  <?php
+   <?php
     require_once '../blocks/header.php';
 
     if ($fail == "email") {
@@ -26,7 +26,7 @@
 		else if ($fail == "none") {
 			$messageShow = "Sent";
 		}
-  ?>
+  ?> 
 
   <main class="main">
     <form method="post" action="../php/check.php">
@@ -47,7 +47,12 @@
   ?>
   </main>
 
-
+<style>
+.main{
+  display:flex;
+  align-items:flex-start;
+}
+</style>
 
   <!-- SCRIPT && STYLE -->
 

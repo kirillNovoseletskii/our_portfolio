@@ -66,6 +66,7 @@ body{
   margin-left: 50px;
   color: var(--color);
   animation: be 2s ease;
+  animation-delay: 2.1s;
   transition: .2s;
 }
 @keyframes be {
@@ -137,10 +138,9 @@ li:nth-child(1) a::before{
   height: 3px;
   background: rgb(0, 0, 0);
   position: absolute;
-  top: 10%;
+  top: 76px;
   transform: scaleX(0);
   transition: .3s;
-  margin-top: 10px;
 }
 .header_link:active{
     color:rgb(133, 133, 133)
@@ -407,7 +407,7 @@ li:nth-child(1) a::before{
   z-index: 10000;
   width: 100vw;
   height: 100vh;
-  background: rgba(255, 255, 255, 0.932);
+  background: rgb(255, 255, 255);
 }
 @keyframes hide{
   0%{
