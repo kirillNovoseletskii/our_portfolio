@@ -10,7 +10,7 @@
 
 <body>
 
-  <?php
+   <?php
     require_once '../blocks/header.php';
 
 
@@ -48,7 +48,12 @@
   ?>
   </main>
 
-
+<style>
+.main{
+  display:flex;
+  align-items:flex-start;
+}
+</style>
 
   <!-- SCRIPT && STYLE -->
 
