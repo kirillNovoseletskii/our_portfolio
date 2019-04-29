@@ -1,15 +1,21 @@
-<?php
-  $lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
+<?
+  header('Content-Type: text/html; charset=UTF-8');
+
+  $goto = $_GET['goto'];
+
+  require_once 'html/main.php';
+
+  /*$lang = $_GET['lang'];
   if ($lang == 'ru') {
-    header('Location: /html/main.php?lang=ru');
+    require_once 'mainru.php';
   }
   else if ($lang == 'en') {
-    header('Location: /html/main.php?lang=en');
+    require_once 'mainen.php';
   }
   else if ($lang == 'ua') {
-    header('Location: /html/main.php?lang=ua');
+    require_once 'mainua.php';
   }
   else {
-    header('Location: /html/main.php?lang=en');
-  }
+    require_once 'mainen.php';
+  }*/
 ?>

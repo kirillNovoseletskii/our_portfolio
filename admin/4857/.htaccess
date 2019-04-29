@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Admin Panel"
+AuthUserFile D:/server/os/OSPanel/domains/localhost/admin/4857/.htpasswd
+Require valid-user
