@@ -17,7 +17,7 @@
   }
 
   if ($error != "") {
-    header("Location: /html/feedback.php?fail=".$error);
+    header("Location: /feedback?fail=".$error);
     exit();
   }
 
@@ -29,5 +29,5 @@
 
   mail('itsrerades@gmail.com', $subject, $mes, $headers);
 
-  header("Location: /html/feedback.php?fail=none");
+  header("Location: /feedback?fail=none");
 ?>

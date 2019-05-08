@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <head>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <?php
-  $title = "PoRTFOLIO";
+  $title = "Feedback";
   require_once "../blocks/head.php";
 
   $fail = $_GET['fail'];
@@ -13,6 +12,7 @@
 
    <?php
     require_once '../blocks/header.php';
+
 
     if ($fail == "email") {
 			$messageShow = "Incorrect e-mail";
@@ -26,7 +26,8 @@
 		else if ($fail == "none") {
 			$messageShow = "Sent";
 		}
-  ?> 
+  ?>
+</header>
 
   <main class="main">
     <form method="post" action="../php/check.php">
