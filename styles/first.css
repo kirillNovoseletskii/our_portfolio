@@ -125,28 +125,11 @@ a{
   font-size: 30px;
   transition: .3s;
 }
-.header_link:hover::before{
-  transform: scaleX(1);
-}
-li:nth-child(1) a::before{
-  width: 60px;
-}
-.header_link::before{
-  transform-origin: left;
-  content: '';
-  width: 100px;
-  height: 3px;
-  background: rgb(0, 0, 0);
-  position: absolute;
-  top: 76px;
-  transform: scaleX(0);
-  transition: .3s;
+.header_link:hover{
+  letter-spacing: 6px;
 }
 .header_link:active{
     color:rgb(133, 133, 133)
-}
-.header_link:active::before{
-  background:rgb(133, 133, 133)
 }
 .main{
   margin-top: 5%;
