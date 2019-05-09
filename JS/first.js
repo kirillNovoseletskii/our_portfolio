@@ -13,7 +13,6 @@ $(document).ready(function () {
   });
 
 
-  /*$(".load").hide();
 
 
   function preloaderStart() {
@@ -29,7 +28,7 @@ $(document).ready(function () {
         'display':'none'
       });
     },3000);
-  };*/
+  };
 
-
+  preloaderStart()
 });

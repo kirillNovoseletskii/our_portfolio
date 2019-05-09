@@ -5,17 +5,17 @@ const sourcemaps = require('gulp-sourcemaps');
  function style() {
   return (
       gulp
-          .src("/sass/*.sass")
+          .src("/sass/first.scss")
 
   
           .pipe(sass())
           .on("error", sass.logError)
 
-          .pipe(gulp.dest("/styles/*.css"))
+          .pipe(gulp.dest("/styles/first.css"))
           );
         }
         function watchFiles() {
-          gulp.watch("/sass/*.sass", style);
+          gulp.watch("/sass/first.scss", style);
         }
 exports.style = style;
 exports.watchFiles = watchFiles;
