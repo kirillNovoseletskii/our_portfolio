@@ -1,5 +1,4 @@
-
-
+<? require_once "/blocks/config.php"; ?>
 
 <!DOCTYPE html>
 <head>
@@ -34,6 +33,17 @@
   </div>
   </header>
 
+  <?  if (isset($_SESSION['username'])) {
+      $username = $_SESSION['username'];
+      echo "Hello, ".$username;
+      echo "<a href='/mycab'>Profile</a>";
+      echo "<a href='/login/logout.php'>Log out</a>";
+      }
+      else {
+        echo "<a href='/reg'>Register</a>";
+        echo "<a href='/login'>Log in</a>";
+      }
+  ?>
 
   <main class="main">
     <div class="about_us">
@@ -152,32 +162,42 @@
   ?>
 
 
-  <script type="text/javascript">
-  $(document).ready(function () {
-    function preloaderStart() {
-      $(".load").show('slow');
-      setTimeout(function() {
-        $(".load").css({
-          'opacity':0,
-          'transform':'scale(2)',
-        });
-      }, 2200);
-      setTimeout(function() {
-        $(".load").css({
-          'display':'none'
-        });
-      },3000);
-    };
-
-    <?php $goto = $_GET['goto'];
-    if ($goto == '') {
-      ?>preloaderStart()<?php
-    } ?>
+<script type="text/javascript">
+$(document).ready(function () {
+  $('.nav-mobile').click(function () {
+    $('.mob-menu').removeClass('close_menu');
+  });
+  $('.close').click(function (){
+    $('.mob-menu').addClass('close_menu')
+  })
+  $(window).scroll(function(){
+    var sc  = $(this).scrollTop();
+    console.log(sc.toFixed(0));
+    $('.background').css('transform','translateY('+sc*1+'px)')
+    $('.title').css('margin-bottom',sc*-0.1+30+'px')
   });
 
- </script>
 
-  <!-- Все работает. Подсветка текста может страдать, но все работает ;D -->
+  $(".load").hide();
+
+
+
+    $(".load").show('slow');
+    setTimeout(function() {
+      $(".load").css({
+        'opacity':0,
+        'transform':'scale(2)',
+      });
+    }, 2200);
+    setTimeout(function() {
+      $(".load").css({
+        'display':'none'
+      });
+    },3000);
+  });
+
+</script>
+
 
 </body>
 </html>
