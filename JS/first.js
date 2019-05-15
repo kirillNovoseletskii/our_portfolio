@@ -10,6 +10,7 @@ $(document).ready(function () {
     console.log(sc.toFixed(0));
     $('.background').css('transform','translateY('+sc*0.5+'px)')
     $('.title').css('margin-bottom',sc*-0.1+30+'px')
+    
   });
 
 
