@@ -1,4 +1,4 @@
-<?php
+<?php /*
 
   $url = $_SERVER['REQUEST_URI'];
 
@@ -12,7 +12,7 @@
 
   if ($goto == "") $goto = 'main';
 
-
+*/
 ?>
 
 
@@ -42,8 +42,8 @@
     <span class="line"></span>
   </div>
   <ul class="nav">
-    <li><a href="/?goto=<?=$goto?>" class = 'header_link'>MAIN</a></li>
+    <li><a href="/" class = 'header_link'>MAIN</a></li>
     <li><a href="#" class = 'header_link'>PROJECTS</a></li>
-    <li><a href="/feedback?goto=<?=$goto?>" class = 'header_link'>FEEDBACK</a></li>
+    <li><a href="/feedback" class = 'header_link'>FEEDBACK</a></li>
     <li><a href="#" class = 'header_link'>CONTACTS</a></li>
   </ul>
