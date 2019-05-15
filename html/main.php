@@ -1,11 +1,9 @@
 
-
-
 <!DOCTYPE html>
 <head>
 <?php
   $title = "Document";
-  require_once "/blocks/head.php";
+  require_once "../blocks/head.php";
 ?>
 </head>
 
