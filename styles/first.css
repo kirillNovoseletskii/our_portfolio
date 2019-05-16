@@ -12,11 +12,41 @@
   width: 100vw;
   background: #ffffff;
 }
+.top{
+  border: 1px solid #fff;
+  z-index: 100;
+  background-blend-mode: overlay;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: #000;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transform: translate(300px);
+  transition: 1s;
+}
+.fa-arrow-up{
+  color: #fff;
+  font-size:40px;
+}
+.second{
+  text-align: right;
+  transform: translateX(100%);
+}
 .wrapper{
   border: 2px solid #7e7e7e;
-  width: 80%;
+  width: 70%;
   min-height: 100%;
   background: rgb(255, 255, 255);
+  padding: 0 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
 }
 .cont{
   display: flex;
@@ -28,6 +58,36 @@ li{
 }
 .Our{
   font-family: var(--font-family-modern)
+}
+.next{
+  width: 52px;
+  height: 62px;
+  color: #2c2c2c;
+  position: absolute;
+  font-size: 60px;
+  left: 50%;
+  top: 40%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  transition: .6s;
+}
+.fa-arrow-down{
+  columns: #fff;
+}
+.next:hover .to_sk{
+  transform: scale(1);
+}
+.next:hover{
+  transform: scale(1.3);
+}
+.to_sk{
+  position: relative;
+  width: 62px;
+  height: 37px;
+  transition: .6s;
+  font-size: 25px;
+  transform: scale(0);
 }
 .mob-menu{
   height: 100vh;
@@ -48,6 +108,7 @@ body::-webkit-scrollbar-thumb{
   border-radius: 5px;
 }
 body,html{
+  scroll-behavior: smooth;
   overflow-x: hidden;
 }
 body{
@@ -181,12 +242,26 @@ a{
   height: 100px;
   background: #000;
   box-sizing: border-box;
-  display: grid;
-  grid-template-columns: repeat(4,2fr);
-  grid-column-gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-
+.soc{
+  align-items: center;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  height: 70%;
+  justify-content: space-around;
+}
+.soc_item a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 2em;
+}
+.txt{
+transition: 1s;
+}
 .main{
   min-height: 100vh;
   padding: 40px;
@@ -194,12 +269,24 @@ a{
   width: 100vw;
   margin: 0;
 }
-
+.skills{
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .skill_title{
   font-size: 50px;
   font-family: 'Patrick Hand', cursive;
 }
 @media only screen and (max-width:640px){
+  .top{
+    display:none;
+  }
+.next{
+  display: none;
+}
   body::-webkit-scrollbar{
     background: rgb(0, 0, 0);
     width: 10px;
