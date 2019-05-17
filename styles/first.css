@@ -149,6 +149,7 @@ body{
   animation: be 2s ease;
   animation-delay: 2.1s;
   transition: .2s;
+  animation-delay: 3s;
 }
 @keyframes be {
   0%{
@@ -222,6 +223,10 @@ a{
 }
 .header_link:hover::before{
   transform: scaleX(1);
+  top: 70px;
+  transform: scaleX(0);
+  transition: .3s;
+  margin-top: 10px;
 }
 .header_link:active{
     color:rgb(133, 133, 133)
