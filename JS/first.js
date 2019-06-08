@@ -8,25 +8,28 @@ var Jquery = $(document).ready(function () {
   var windowScroll = $(window).scroll(function(){
     var sc  = $(this).scrollTop();
     console.log(sc.toFixed(0));
+    $('.nav').css(
+      'transform',`translateY(${sc*-1}px)`
+    );
     $('.background').css('transform','translateY('+sc*0.5+'px)')
-    $('.title').css('margin-bottom',sc*-0.1+30+'px')
+    $('.title').css('margin-bottom',`${sc*-0.1+30}px`)
     if(sc>0){
-      $('.top').css('transform','translate(0)')
+     
+      $('.top').css('transform','translate(0)');
     }
     else{
-      $('.top').css('transform','translate(300px)')
+      $('.top').css('transform','translate(300px)');
     }
-    if (sc>=790){
-      $('.txt').css({
-        'transform':' translate(0)'
+    if(sc>700){
+      $('.nav').css({
+        'border-bottom':'2px solid black',
       })
     }
     else{
-      $('.first').css('transform',' translate(-100%)')
-      $('.second').css('transform',' translate(100%)')
-    
-    };
-    
+      $('.nav').css({
+        'border-bottom':'none',
+      })
+    }
   });
 $('.top').click(function() {
   $('body,html').animate({scrollTop:0},100);
