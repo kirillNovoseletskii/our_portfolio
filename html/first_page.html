@@ -1,10 +1,9 @@
+
 <!DOCTYPE html>
-
-<!---НЕ ИСПОЛЬЗУЕТСЯ!!! MAIN.PHP & INDEX.PHP & MAINEN.PHP -->
-
-
 <html lang="en">
 <head>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
@@ -19,18 +18,6 @@
 </head>
 <body>
   <div class="top"><i class="fas fa-arrow-up"></i></div>
-  <!-- <div class="load">
-      <div class="bg">
-          <div class="cube">
-            <div class="top"></div>
-            <div class="right"></div>
-            <div class="left"></div>
-            <div class="front"></div>
-            <div class="back"></div>
-            <div class="bottom"></div>
-          </div>
-        </div>
-  </div> -->
   <div id="particles-js"></div>
   <div class="mob-menu close_menu">
     <div class="close">
@@ -70,16 +57,20 @@
     </a>
     <div class="title">
       
-      <h1>PORT<span class="folio">FOLIO</span> </h1>
+      <h1>WEB<span class="folio">BUZZ</span> </h1>
     </div>
     
   </header>
   <main id = 'app' class="main">
+      <i class="fas fa-angle-right angle"></i>
+      <i class="fas fa-angle-left angle"></i>
     <div class="wrapper cont">
+        
      <div class="skills">
-        <h1 class = 'skill_title'>SKILLS</h1>
+        <h1 class = 'skill_title'>{{SKILLS}}</h1>
         <div class="front_end-block">
           <div class="skill-block">
+    
             <div data-aos="fade-right" class="slill-logo">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="156px" height="261px" viewBox="0 0 256 361" version="1.1" preserveAspectRatio="xMidYMid">
                 <g>
@@ -132,7 +123,7 @@
             </div>
           </div>
           <div class="skill-block">
-            <div data-aos="fade-right" class="js slill-logo">
+            <div data-aos="fade-right" @click = 'count++' class="js slill-logo">
               
             </div>
             <div data-aos="fade-left" class="logo-title">
@@ -143,11 +134,10 @@
                 </p>
               </div>
             </div>
-            
           </div>
         </div>
-       
      </div>
+     <div class="back_end-block"></div>
      <div class="about_us">
        <div class="about_title">
 

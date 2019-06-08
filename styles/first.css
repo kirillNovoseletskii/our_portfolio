@@ -10,7 +10,7 @@
   z-index: -10;
   height: 100vh;
   width: 100vw;
-  background: #ffffff;
+  background: #181818;
 }
 .top{
   border: 1px solid #fff;
@@ -279,6 +279,12 @@ a{
   color: #fff;
   font-size: 2em;
 }
+.soc_item{
+  transition: .3s;
+}
+.soc_item:hover{
+  transform:scale(1.5);
+}
 .txt{
 transition: 1s;
 }
@@ -484,7 +490,7 @@ transition: 1s;
 
   }
   .skill-block{
-    margin: 30px 0;
+    margin: 60px 0;
     width: 100%;
     height: 220px;
     display: flex;
@@ -496,7 +502,7 @@ transition: 1s;
     flex-direction: column;
     align-items: center;
     font-size: 3em;
-    font-family: 'Inconsolata', monospace;
+    font-family: 'Indie Flower', cursive;
     letter-spacing: 3px;
   }
   .logo-title:hover .hidden{
@@ -540,4 +546,14 @@ transition: 1s;
   }
   .js-title{
     font-size: 70px;
+  }
+  .angle{
+    color:#FFFF01;
+    font-size: 60px;
+  }
+  .fa-angle-left{
+    transform: translateY(70vh) translateX(-40vw);
+  }
+  .fa-angle-right{
+    transform: translateY(70vh) translateX(40vw);
   }

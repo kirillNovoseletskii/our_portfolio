@@ -54,7 +54,13 @@ $('.top').click(function() {
 new Vue({
   el:'#app',
   data:{
-    
+    count:0,
+    SKILLS:'SKILLS'
+  },
+  methods: {
+    add:function(){
+      alert('d')
+    }
   },
 })
 AOS.init({
