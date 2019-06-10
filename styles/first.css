@@ -10,7 +10,7 @@
   z-index: -10;
   height: 100vh;
   width: 100vw;
-  background: #181818;
+  background: #ffffff;
 }
 .top{
   border: 1px solid #fff;
@@ -137,7 +137,8 @@ body{
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.205);
 }
 .folio{
-  background: var(--color);
+  padding: 3px;
+  background: rgba(255, 217, 1, 0.616);
   color: #E8E8E8;
 }
 .title{
@@ -145,7 +146,7 @@ body{
   margin-bottom: 30px;
   font-family: var(--font-family-modern);
   margin-left: 50px;
-  color: var(--color);
+  color:rgb(255, 217, 1);
   animation: be 2s ease;
   animation-delay: 2.1s;
   transition: .2s;
@@ -172,8 +173,9 @@ body{
 .background{
   width: 100vw;
   height: 800px;
-  background: url(../images/matthew-ronder-seid-424703-unsplash.jpg) no-repeat;
+  background: url(../images/yellow.jpg) no-repeat;
   background-size: cover;
+  filter: saturate(80%)
 }
 .nav-mobile{
   width: 35px;
@@ -200,12 +202,13 @@ body{
   
 }
 a{
-  color: black;
+  color: rgb(255, 255, 255);
   text-decoration: none;
 }
 .header_link{
+  margin:5px 0;
   width: 20%;
-  font-size: 30px;
+  font-size: 40px;
   transition: .3s;
   position: relative;
   transition: .2s;
@@ -215,7 +218,7 @@ a{
   position: absolute;
   width: 100%;
   height: 3px;
-  background: #000;
+  background: rgb(255, 255, 255);
   bottom: 0;
   transform: scaleX(0);
   transform-origin: left;
@@ -227,8 +230,8 @@ a{
   position: absolute;
   width: 100%;
   height: 3px;
-  background: #000;
-  top: 5px;
+  background: rgb(255, 255, 255);
+  top: 1px;
   left: 0;
   transform: scaleX(0);
   transform-origin: right;
@@ -275,12 +278,16 @@ a{
   justify-content: space-around;
 }
 .soc_item a{
+  transition: .4s;
   text-decoration: none;
   color: #fff;
   font-size: 2em;
 }
 .soc_item{
-  transition: .3s;
+  transition: .4s;
+}
+.soc_item:hover a{
+  color:rgb(255, 208, 1);
 }
 .soc_item:hover{
   transform:scale(1.5);
@@ -548,12 +555,12 @@ transition: 1s;
     font-size: 70px;
   }
   .angle{
-    color:#FFFF01;
+    color:#000;
     font-size: 60px;
   }
   .fa-angle-left{
     transform: translateY(70vh) translateX(-40vw);
   }
   .fa-angle-right{
-    transform: translateY(70vh) translateX(40vw);
+    transform: translateY(75vh) translateX(40vw);
   }
