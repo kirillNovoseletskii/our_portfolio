@@ -4,8 +4,7 @@
     $title = "My Cabinet";
     require_once "../blocks/head.php";
   ?>
-  <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
-  <script type="text/javascript" src="../js/mycab.js"></script>
+
 </head>
 <body>
 <?
@@ -66,6 +65,9 @@
   </div>
 
 </div>
+
+<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+<script type="text/javascript" src="../js/mycab.js"></script>
 
 </body>
 

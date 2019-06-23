@@ -26,7 +26,7 @@
       }
       if ($link == $_SESSION['randl']) {
         $query = "INSERT INTO auth (username, password, email) VALUES ('$username', '$password', '$email')";
-        $result = mysqli_query($conn, $query);
+        $result = mysqli_query($conn, $query) or die(mysqli_error($conn));
 
         if ($result) {
           $msgOutAuth = 'You are registered.';

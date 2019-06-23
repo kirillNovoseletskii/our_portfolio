@@ -1,7 +1,5 @@
-<<<<<<< HEAD
-=======
+
 <? require_once "../blocks/config.php"; ?>
->>>>>>> 70744861cd458fa9f440adce061143588785175f
 
 <!DOCTYPE html>
 <head>
