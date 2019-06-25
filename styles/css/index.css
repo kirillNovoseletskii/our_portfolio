@@ -1,4 +1,6 @@
 /* imports */
+@import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=B612+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
 /*---------*/
@@ -11,15 +13,93 @@ body{
 }
 /* Top Block */
 .top_block{
-  height: 600px;
+  overflow: hidden;
+  height: 700px;
   width: 100vw;
   background:#FE7860;
 }
-.l{
-  filter: blur(2px);
-  background:#9101ff;
-  height: 600px;
-  width: 70%;
-  clip-path: polygon(0 0,100% 0,780px 30% , 300px 70%, 00px 100%);
+.fill{
+  top: -100px;
+  position: relative;
+  width: 60%;
+  height: 100%;
+  background: #506cf0;
+  clip-path: inset(0% 0 round 0 800px 20px 0%);
 }
-/*  */
+.min_fill{
+  z-index: 3;
+  clip-path: inset(0px 0% round 0 500px 0% 0%);
+  right: 210px;
+  bottom: -3px;
+  position: absolute;
+  background: #506cf0;
+  width: 700px;
+  height: 300px;
+}
+/* screen */
+.screen{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  left:500px;
+  z-index: 0;
+  position: absolute;
+  width: 800px;
+  height: 520px;
+  background: #fbfbfb;
+}
+.border{
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 50px;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #474747;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.two{
+  color: #FE7860;
+}
+.devs{
+  color: #506cf0;
+}
+.fiz{
+  width: 1px;
+  height: 5px;
+  border-right: 10px solid #506cf0;
+  border-left: 10px solid #FE7860;
+}
+/* menu */
+.menu{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.link{
+  font-size: 26px;
+  color: #506cf0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 200px;
+  height: 60px;
+  text-decoration: none;
+  font-family: 'B612 Mono', monospace;
+}
+.main_link{
+  color: aliceblue
+}
+/* MAIN */
+.main{
+  width: 100vw;
+  min-height: 700px;
+}
