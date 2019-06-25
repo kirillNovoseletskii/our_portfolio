@@ -96,20 +96,33 @@ body{
   justify-content: space-around;
 }
 .link{
+  transition: .6s;
+  clip-path: inset(0 0 round 20px 20px 20px 20px);
+  background: #fff;
+  width: 200px;
+  height: 40px;
   font-size: 26px;
-  color: aliceblue;
+  color: #f3b200;
   z-index: 1;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  width: 200px;
+  width: 180px;
   height: 60px;
   text-decoration: none;
   font-family: 'B612 Mono', monospace;
 }
+.link:hover{
+  clip-path: inset(0 0 round 50% 50% 50% 50%);
+  background: #506cf0;
+  color: aliceblue;
+}
 .main_link{
-  color: aliceblue
+  color: #f3b200
+}
+.main_link:hover{
+  background: #FE7860;
 }
 /* text Styles */
 .head_title{
