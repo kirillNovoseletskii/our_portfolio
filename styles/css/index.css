@@ -1,11 +1,11 @@
 /* imports */
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap');
 @import url('https://fonts.googleapis.com/css?family=B612+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
 /*---------*/
 /* animations */
-
 body{
   overflow-x: hidden;
   width: 100vw;
@@ -21,19 +21,24 @@ body{
   background:#FE7860;
 }
 .fill{
-  transition: .6s;
+  flex-direction: column;
+  display: flex;
+  padding: 50px;
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: center;
   top: -100px;
   position: relative;
   width: 60%;
   height: 100%;
   background: #506cf0;
   clip-path: inset(0% 0 round 0 800px 20px 0%);
+  z-index: 3;
 }
 .min_fill{
-  transition: .6s;
   transform: translateY(-400px);
   right: 210px;
-  z-index: 3;
+  z-index: 0;
   clip-path: inset(0px 0% round 0 600px 0% 0%);
   position: absolute;
   background: #506cf0;
@@ -104,11 +109,26 @@ body{
 .main_link{
   color: aliceblue
 }
+/* text Styles */
+.head_title{
+  font-size: 34px;
+  font-family: 'Titillium Web', sans-serif;
+ font-weight: bold;
+  color: aliceblue;
+}
+.head_txt{
+  font-size: 18px;
+  display: block;
+  width: 500px;
+  height: 300px;
+  font-family: 'Titillium Web', sans-serif;
+  color: aliceblue;
+}
 /* MAIN */
 .main{
   width: 100vw;
   min-height: 700px;
-  background: #FE7860;
+  background: linear-gradient(180deg,#FE7860,#fff) ;
 }
 .min_main_fill{
   clip-path: inset(0 0 round 0 0px 320px 0px);

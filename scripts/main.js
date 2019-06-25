@@ -1,5 +1,4 @@
 $(document).ready(function () {
-  $('.menu-button').click(function () { 
-   
-  });
+  
 });
+AOS.init();
