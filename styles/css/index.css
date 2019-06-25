@@ -45,10 +45,10 @@ body{
   padding: 16px;
   box-sizing: border-box;
   border-radius: 20px;
-  left:500px;
+  left:550px;
   z-index: 0;
   position: absolute;
-  width: 800px;
+  width: 770px;
   height: 520px;
   background: #fbfbfb;
 }
@@ -70,6 +70,7 @@ body{
   color: #506cf0;
 }
 .fiz{
+  background: #506cf0;
   width: 1px;
   height: 5px;
   border-right: 10px solid #506cf0;
