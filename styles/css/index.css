@@ -27,15 +27,16 @@ body{
   clip-path: inset(0% 0 round 0 800px 20px 0%);
 }
 .min_fill{
+  transform: translateY(-400px);
+  right: 210px;
   z-index: 3;
   clip-path: inset(0px 0% round 0 500px 0% 0%);
-  right: 210px;
-  bottom: -3px;
   position: absolute;
   background: #506cf0;
   width: 700px;
   height: 300px;
 }
+
 /* screen */
 .screen{
   display: flex;
