@@ -4,6 +4,8 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
 /*---------*/
+/* animations */
+
 body{
   overflow-x: hidden;
   width: 100vw;
@@ -19,6 +21,7 @@ body{
   background:#FE7860;
 }
 .fill{
+  transition: .6s;
   top: -100px;
   position: relative;
   width: 60%;
@@ -27,10 +30,11 @@ body{
   clip-path: inset(0% 0 round 0 800px 20px 0%);
 }
 .min_fill{
+  transition: .6s;
   transform: translateY(-400px);
   right: 210px;
   z-index: 3;
-  clip-path: inset(0px 0% round 0 500px 0% 0%);
+  clip-path: inset(0px 0% round 0 600px 0% 0%);
   position: absolute;
   background: #506cf0;
   width: 700px;
@@ -86,7 +90,7 @@ body{
 }
 .link{
   font-size: 26px;
-  color: #506cf0;
+  color: aliceblue;
   z-index: 1;
   display: flex;
   align-items: center;
@@ -104,4 +108,21 @@ body{
 .main{
   width: 100vw;
   min-height: 700px;
+  background: #FE7860;
+}
+.min_main_fill{
+  clip-path: inset(0 0 round 0 0px 320px 0px);
+  width: 570px;
+  height: 470px;
+  background: #506cf0;
+  position: absolute;
+  left: 0;
+}
+.main_fill{
+  clip-path: inset(0 0 round 0 0 300px 0);
+  width: 700px;
+  height: 300px;
+  background: #506cf0;
+  position: absolute;
+  right: 210px;
 }
